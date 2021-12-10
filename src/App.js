@@ -59,7 +59,7 @@ const App = () => {
       <div className='top'>
           {
             initialData.map((char, index) => (
-            <p key={index} char={char} >{char.name}</p>
+            <p key={index}>{char.name}</p>
             ))
           }
     </div>
