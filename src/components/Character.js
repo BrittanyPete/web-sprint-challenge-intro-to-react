@@ -29,7 +29,7 @@ p {
 
 // Write your Character component here
 export default function Character({char}) {
-    const [name, setName] = useState('');
+    // const [name, setName] = useState('');
     const [birth, setBirth] = useState('')
     const [height, setHeight] = useState('')
     const [hair, setHair] = useState('')
@@ -41,7 +41,7 @@ export default function Character({char}) {
     }
 
     useEffect(() => {
-        setName(char.name)
+        // setName(char.name)
         setBirth(char.birth_year)
         setHeight(char.height)
         setHair(char.hair_color)
@@ -52,8 +52,8 @@ export default function Character({char}) {
 
     return (
         <StyledChar>
-            <h2>{name}</h2>
-            <button id='toggleInfo' onClick={toggleInfo}>{infoOn ? `Hide Info` : `Learn more about ${name}`}</button>
+            {/* <h2>{name}</h2> */}
+            <button id='toggleInfo' onClick={toggleInfo}>{infoOn ? `Hide Info` : `Learn more:`}</button>
 
             {
             infoOn && <div className='charInfo'>
