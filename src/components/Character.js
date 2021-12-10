@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 const StyledChar = styled.div`
@@ -17,16 +17,18 @@ h2 {
 
 // Write your Character component here
 export default function Character({char}) {
-    // const [character, setCharacter] = useState('');
-    // const [height, setHeight] = useState('');
-    // const [gender, setGender] = useState('');
+    const [name, setName] = useState('');
 
-    console.log(`CharacterPage: ${char.name}`)
+    useEffect(() => {
+        setName(char.name)
+    }, [])
+
+ 
 
 
     return (
         <StyledChar>
-            <h2>{char.name}</h2>
+            <h2>{name}</h2>
             <div>
             <p>More about {char.name}:</p>
             <p>Born Year: {char.birth_year}</p>
