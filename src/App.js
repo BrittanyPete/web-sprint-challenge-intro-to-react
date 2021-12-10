@@ -38,14 +38,11 @@ const App = () => {
   fetchCharacters()
   }, [])
 
-initialData.forEach((item) => {
-  return item;
-})
 
   return (
     <StyledApp className="App">
-      <img className="Header" src='https://fontmeme.com/permalink/211210/4f9a8d2a56104d9a70a065d31b072c05.png' />
-      {/* <h1 className="Header">Characters</h1> */}
+      <img className="Header" src='https://fontmeme.com/permalink/211210/4f9a8d2a56104d9a70a065d31b072c05.png' alt='character title'/>
+      <h1 className="Header">Characters</h1>
       <>
           {
             initialData.map((char, index) => (
