@@ -7,7 +7,9 @@ import styled from 'styled-components';
 const StyledApp = styled.div`
   img.Header {
     width: 50%;
+    
   }
+  margin: 1.5%;
 `
 
 const App = () => {
