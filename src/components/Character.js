@@ -30,8 +30,8 @@ h2 {
     width: 100%;
     margin: 2%;
     border: 3px solid ${props => props.theme.secondaryColor};
-    transform: scale(2); //start of animation
-    opacity: 0; //start of animation
+    transform: scale(2); 
+    opacity: 0; 
     animation: ${kf} 0.5s ease-in-out forwards;
 }
 
@@ -52,6 +52,23 @@ button:hover {
 }
 
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  button {
+    font-size: 1.2rem;
+  }
+  .charInfo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 
 `
 
